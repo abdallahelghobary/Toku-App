@@ -1,12 +1,63 @@
 import 'package:flutter/material.dart';
+import 'package:toku_app/components/item.dart';
+import 'package:toku_app/screens/models/number.dart';
 
 class NumbersPage extends StatelessWidget {
   const NumbersPage({super.key});
 
- final Number One = const Number(
-  image: 'assets/images/numbers/number_one.png', jpName: 'ichi', enName: 'one'
-  );
-  
+  final List<Number> numbers = const [
+    Number(
+      image: 'assets/images/numbers/number_one.png',
+      jpName: 'ichi',
+      enName: 'one',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_two.png',
+      jpName: 'icho',
+      enName: 'two',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_three.png',
+      jpName: 'icho',
+      enName: 'Three',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_four.png',
+      jpName: 'icho',
+      enName: 'four',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_five.png',
+      jpName: 'icho',
+      enName: 'five',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_six.png',
+      jpName: 'icho',
+      enName: 'Six',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_seven.png',
+      jpName: 'icho',
+      enName: 'seven',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_eight.png',
+      jpName: 'icho',
+      enName: 'eight',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_nine.png',
+      jpName: 'icho',
+      enName: 'nine',
+    ),
+    Number(
+      image: 'assets/images/numbers/number_ten.png',
+      jpName: 'icho',
+      enName: 'ten',
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,55 +70,23 @@ class NumbersPage extends StatelessWidget {
         ),
       ),
 
-      body: Container(
-        height: 100,
-        color: Color(0xffef9235),
-
-        child: Row(
-          children: [
-            Container(
-              color: Color(0xfffff4d9),
-              child: Image.asset(One.image),
-            ),
-
-            Padding(
-              padding: const EdgeInsets.only(left: 22),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    One.jpName,
-                    style: TextStyle(color: Colors.white, fontSize: 20),
-                  ),
-                  Text(
-                    One.enName,
-                    style: TextStyle(color: Colors.white, fontSize: 19),
-                  ),
-                ],
-              ),
-            ),
-
-            Spacer(flex: 1),
-     
-            Padding(
-              padding: const EdgeInsets.only(right: 20),
-              child: Icon(Icons.play_arrow, color: Colors.white, size: 30),
-            ),
-          ],
-        ),
+      body: ListView.builder(
+        itemCount: numbers.length,
+        itemBuilder: (context, index) {
+          return Item(number: numbers[index]);
+        },
       ),
     );
   }
-}
 
-class Number {
-final  String image;
-final String jpName;
-final  String enName;
-  
- const Number({required this.image, required this.jpName, required this.enName});
+/*
+  List<Widget> getlists(List<Number> numbers) {
+    List<Widget> itemList = [];
 
-
-
-
+    for (int i = 0; i < numbers.length; i++) {
+      itemList.add(Item(number: numbers[i]));
+    }
+    return itemList;
+  }
+  */
 }
