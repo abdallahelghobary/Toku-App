@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/components/item.dart';
+import 'package:toku_app/components/list_item.dart';
 import 'package:toku_app/screens/models/number.dart';
 
 class NumbersPage extends StatelessWidget {
@@ -8,53 +8,74 @@ class NumbersPage extends StatelessWidget {
   final List<Number> numbers = const [
     Number(
       image: 'assets/images/numbers/number_one.png',
-      jpName: 'ichi',
+      jpName: 'Ichi',
       enName: 'one',
+      sound: 'sounds/numbers/number_one_sound.mp3'
+
+      
     ),
     Number(
       image: 'assets/images/numbers/number_two.png',
-      jpName: 'icho',
+      jpName: 'Ni',
       enName: 'two',
+      sound: 'sounds/numbers/number_two_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_three.png',
-      jpName: 'icho',
-      enName: 'Three',
+      jpName: 'San',
+      enName: 'three',
+      sound: 'sounds/numbers/number_three_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_four.png',
-      jpName: 'icho',
+      jpName: 'Shi',
       enName: 'four',
+      sound: 'sounds/numbers/number_four_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_five.png',
-      jpName: 'icho',
+      jpName: 'Go',
       enName: 'five',
+      sound: 'sounds/numbers/number_five_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_six.png',
-      jpName: 'icho',
+      jpName: 'Roku',
       enName: 'Six',
+      sound: 'sounds/numbers/number_six_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_seven.png',
-      jpName: 'icho',
+      jpName: 'Sebun',
       enName: 'seven',
+      sound: 'sounds/numbers/number_seven_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_eight.png',
-      jpName: 'icho',
+      jpName: 'Hashi',
       enName: 'eight',
+      sound: 'sounds/numbers/number_eight_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_nine.png',
-      jpName: 'icho',
+      jpName: 'kyuu',
       enName: 'nine',
+      sound: 'sounds/numbers/number_nine_sound.mp3'
+
     ),
     Number(
       image: 'assets/images/numbers/number_ten.png',
-      jpName: 'icho',
+      jpName: 'Juu',
       enName: 'ten',
+      sound: 'sounds/numbers/number_ten_sound.mp3'
+
     ),
   ];
 
