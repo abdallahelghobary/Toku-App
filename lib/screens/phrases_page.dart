@@ -1,9 +1,10 @@
+
 import 'package:flutter/material.dart';
 import 'package:toku_app/components/list_item.dart';
 import 'package:toku_app/screens/models/number.dart';
 
-class NumbersPage extends StatelessWidget {
-  const NumbersPage({super.key});
+class PhrasesPage extends StatelessWidget {
+  const PhrasesPage({super.key});
 
   final List<ItemModel> numbers = const [
     ItemModel(
@@ -75,7 +76,7 @@ class NumbersPage extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.white),
         backgroundColor: Color(0xff463126),
         title: Text(
-          'Numbers',
+          'Phrase',
           style: TextStyle(color: Colors.white, fontSize: 24),
         ),
       ),
@@ -83,7 +84,7 @@ class NumbersPage extends StatelessWidget {
       body: ListView.builder(
         itemCount: numbers.length,
         itemBuilder: (context, index) {
-          return ListItem(colorso: Color(0xffef9235), number: numbers[index]);
+          return ListItem(colorso: Color(0xff50adc7), number: numbers[index]);
         },
       ),
     );

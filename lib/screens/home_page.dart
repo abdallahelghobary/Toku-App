@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:toku_app/components/category_item.dart';
+import 'package:toku_app/screens/family_members_page.dart';
 import 'package:toku_app/screens/numbers_page.dart';
+import 'package:toku_app/screens/phrases_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,9 +22,14 @@ class HomePage extends StatelessWidget {
         children: [
           Category(
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                      return NumbersPage();
-              }));
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return NumbersPage();
+                  },
+                ),
+              );
             },
             text: 'Numbers',
             color: Color(0xffef9235),
@@ -31,18 +38,33 @@ class HomePage extends StatelessWidget {
           // Family Members
           Category(
             onTap: () {
-
-              Navigator.push(context, MaterialPageRoute(builder: (BuildContext  context) 
-              {
-                return NumbersPage();
-              }));
-          
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return FamilyMembers();
+                  },
+                ),
+              );
             },
             text: 'Family Members',
             color: Color(0xff558b37),
           ),
 
-          Category(onTap: () {}, text: 'Colors', color: Color(0xff7d40a2)),
+          Category(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return PhrasesPage();
+                  },
+                ),
+              );
+            },
+            text: 'Colors',
+            color: Color(0xff7d40a2),
+          ),
 
           Category(onTap: () {}, text: 'Phrases', color: Color(0xff50adc7)),
         ],

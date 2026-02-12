@@ -30,7 +30,6 @@ flutter:
     - assets/sounds/numbers/
     - assets/sounds/phrases/
 
-  # إذا كنت عايز تضيف خطوط مخصصة، حطها هنا
   # fonts:
   #   - family: Schyler
   #     fonts:

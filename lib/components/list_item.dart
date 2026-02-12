@@ -2,24 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/screens/models/number.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-class Item extends StatelessWidget {
-  const Item({super.key, required this.number});
+class ListItem extends StatelessWidget {
+  const ListItem({super.key, required this.number, required this.colorso});
 
-  final Number number;
-
+  final ItemModel number;
+  final Color colorso;
   // final AudioPlayer player = AudioPlayer();
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 100,
-      color: Color(0xffef9235),
-       
+      color: colorso,
+
       child: Row(
         children: [
-          Container(
-            color: Color(0xfffff4d9),
-            child: Image.asset(number.image),
-          ),
+          Container(color: Color(0xfffff4d9), child: Image.asset(number.image)),
 
           Padding(
             padding: const EdgeInsets.only(left: 22),
