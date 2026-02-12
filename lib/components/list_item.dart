@@ -21,6 +21,7 @@ class ListItem extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 22),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
