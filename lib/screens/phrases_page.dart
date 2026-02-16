@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:toku_app/components/list_item.dart';
 import 'package:toku_app/screens/models/number.dart';
@@ -6,66 +5,66 @@ import 'package:toku_app/screens/models/number.dart';
 class PhrasesPage extends StatelessWidget {
   const PhrasesPage({super.key});
 
-  final List<ItemModel> numbers = const [
+  final List<ItemModel> item = const [
     ItemModel(
-      image: 'assets/images/numbers/number_one.png',
-      jpName: 'Ichi',
-      enName: 'one',
-      sound: 'sounds/numbers/number_one_sound.mp3',
+      jpName: 'dont_forget_to_subscribe',
+      enName: 'dont forget to subscribe',
+
+      sound: 'sounds/phrases/dont_forget_to_subscribe.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_two.png',
-      jpName: 'Ni',
-      enName: 'two',
-      sound: 'sounds/numbers/number_two_sound.mp3',
+      jpName: 'i_love_programming',
+      enName: 'I Love Programing',
+
+      sound: 'sounds/phrases/i_love_programming.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_three.png',
-      jpName: 'San',
-      enName: 'three',
-      sound: 'sounds/numbers/number_three_sound.mp3',
+      jpName: 'programming_is_easy',
+      enName: 'programming_is_easy',
+
+      sound: 'sounds/phrases/programming_is_easy.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_four.png',
-      jpName: 'Shi',
-      enName: 'four',
-      sound: 'sounds/numbers/number_four_sound.mp3',
+      jpName: 'where_are_you_going',
+      enName: 'where_are_you_going',
+
+      sound: 'sounds/phrases/where_are_you_going.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_five.png',
-      jpName: 'Go',
-      enName: 'five',
-      sound: 'sounds/numbers/number_five_sound.mp3',
+      jpName: 'what_is_your_name',
+      enName: 'what_is_your_name',
+
+      sound: 'sounds/phrases/what_is_your_name.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_six.png',
-      jpName: 'Roku',
-      enName: 'Six',
-      sound: 'sounds/numbers/number_six_sound.mp3',
+      jpName: 'i_love_animel',
+      enName: 'i_love_animel',
+      sound: 'sounds/phrases/i_love_anime.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_seven.png',
-      jpName: 'Sebun',
-      enName: 'seven',
-      sound: 'sounds/numbers/number_seven_sound.mp3',
+      jpName: 'how_are_you_feeling',
+      enName: 'how_are_you_feeling',
+      sound: 'sounds/phrases/how_are_you_feeling.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_eight.png',
-      jpName: 'Hashi',
-      enName: 'eight',
-      sound: 'sounds/numbers/number_eight_sound.mp3',
+      jpName: 'how_are_you_feeling',
+      enName: 'how_are_you_feeling',
+      sound: 'sounds/phrases/how_are_you_feeling.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_nine.png',
-      jpName: 'kyuu',
-      enName: 'nine',
-      sound: 'sounds/numbers/number_nine_sound.mp3',
+      jpName: 'how_are_you_feeling',
+      enName: 'how_are_you_feeling',
+      sound: 'sounds/phrases/how_are_you_feeling.wav',
     ),
     ItemModel(
-      image: 'assets/images/numbers/number_ten.png',
-      jpName: 'Juu',
-      enName: 'ten',
-      sound: 'sounds/numbers/number_ten_sound.mp3',
+      jpName: 'what_is_your_name',
+      enName: 'what_is_your_name',
+      sound: 'sounds/phrases/what_is_your_name.wav',
+    ),
+    ItemModel(
+      jpName: 'what_is_your_name',
+      enName: 'what_is_your_name',
+      sound: 'sounds/phrases/what_is_your_name.wav',
     ),
   ];
 
@@ -82,9 +81,9 @@ class PhrasesPage extends StatelessWidget {
       ),
 
       body: ListView.builder(
-        itemCount: numbers.length,
+        itemCount: item.length,
         itemBuilder: (context, index) {
-          return ListItem(colorso: Color(0xff50adc7), number: numbers[index]);
+          return PhrasesItem(colorso: Color(0xff50adc7), item: item[index]);
         },
       ),
     );

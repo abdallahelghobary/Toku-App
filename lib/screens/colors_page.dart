@@ -3,11 +3,8 @@ import 'package:toku_app/components/list_item.dart';
 import 'package:toku_app/screens/models/number.dart';
 
 class ColorsPage extends StatelessWidget {
- const ColorsPage({super.key});
+  const ColorsPage({super.key});
 
- 
-
- 
   final List<ItemModel> models = const [
     ItemModel(
       image: 'assets/images/colors/color_black.png',
@@ -86,9 +83,7 @@ class ColorsPage extends StatelessWidget {
       body: ListView.builder(
         itemCount: models.length,
         itemBuilder: (context, index) {
-
-          return ListItem(colorso:  Color(0xff7d40a2)
-          , number: models[index]);
+          return ListItem(colorso: Color(0xff7d40a2), item: models[index]);
         },
       ),
     );

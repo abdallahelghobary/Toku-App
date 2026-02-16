@@ -3,10 +3,11 @@ import 'package:toku_app/components/category_item.dart';
 import 'package:toku_app/screens/colors_page.dart';
 import 'package:toku_app/screens/family_members_page.dart';
 import 'package:toku_app/screens/numbers_page.dart';
+import 'package:toku_app/screens/phrases_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +67,31 @@ class HomePage extends StatelessWidget {
             color: Color(0xff7d40a2),
           ),
 
-          Category(onTap: () {}, text: 'Phrases', color: Color(0xff50adc7)),
+          Category(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return PhrasesPage();
+                  },
+                ),
+              );
+            },
+
+            text: 'Phrases',
+            color: Color(0xff50adc7),
+          ),
+           Spacer(flex: 1,),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.purple
+              ,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))
+            ),
+            onPressed: (){},
+             child: Text('ELGHOBARY',style: TextStyle(color: Colors.white),)),
+          Spacer(flex: 2,)
         ],
       ),
     );

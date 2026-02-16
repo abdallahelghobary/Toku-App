@@ -1,11 +1,23 @@
 class ItemModel {
-  final String image;
+  final String? image;
   final String jpName;
   final String enName;
   final String sound;
 
   const ItemModel({
-    required this.image,
+    this.image,
+    required this.jpName,
+    required this.enName,
+    required this.sound,
+  });
+}
+
+class PhrasesItems {
+  final String jpName;
+  final String enName;
+  final String sound;
+
+  const PhrasesItems({
     required this.jpName,
     required this.enName,
     required this.sound,
@@ -15,3 +27,4 @@ class ItemModel {
 
 // If I Needed Change Thing or Add Discription Create New Class FamilyMember
 // vedio 144 
+
