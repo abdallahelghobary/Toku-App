@@ -7,17 +7,17 @@ class PhrasesPage extends StatelessWidget {
 
   final List<ItemModel> phrasesList = const [
     ItemModel(
-    jpName: 'Kōdoku o wasurenaide kudasai',
+    jpName: 'Kōdoku o wasurenaide\nkudasai',
     enName: 'don\'t forget to subscribe',
     sound: 'sounds/phrases/dont_forget_to_subscribe.wav',
   ),
   ItemModel(
-    jpName: 'Watashi wa puroguramingu ga \ndaisuki desu',
+    jpName: 'Watashi wa puroguramingu\n ga daisuki desu',
     enName: 'i love programming',
     sound: 'sounds/phrases/i_love_programming.wav',
   ),
   ItemModel(
-    jpName: 'Puroguramingu wa kantan desu',
+    jpName: 'Puroguramingu wa\n kantan desu',
     enName: 'programming is easy',
     sound: 'sounds/phrases/programming_is_easy.wav',
   ),
@@ -27,12 +27,12 @@ class PhrasesPage extends StatelessWidget {
     sound: 'sounds/phrases/where_are_you_going.wav',
   ),
   ItemModel(
-    jpName: 'Anata no namae wa nan desu ka ',
+    jpName: 'Anata no namae \nwa nan desu ka ',
     enName: 'what is your name?',
     sound: 'sounds/phrases/what_is_your_name.wav',
   ),
   ItemModel(
-    jpName: 'Watashi wa anime ga daisuki desu ',
+    jpName: 'Watashi wa anime \nga daisuki desu ',
     enName: 'i love anime',
     sound: 'sounds/phrases/i_love_anime.wav',
   ),

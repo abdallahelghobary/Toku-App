@@ -22,7 +22,7 @@ class FamilyMembers extends StatelessWidget {
 
     ItemModel(
       image: 'assets/images/family_members/family_grandfather.png',
-      jpName: 'Ojīsan (おじいさん)',
+      jpName: 'Ojīsan (おじさ)',
       enName: 'Grandfather',
       sound: 'sounds/family_members/grand father.wav',
     ),
@@ -36,7 +36,7 @@ class FamilyMembers extends StatelessWidget {
 
     ItemModel(
       image: 'assets/images/family_members/family_grandmother.png',
-      jpName: 'Obāsan (おばあさん)',
+      jpName: 'Obāsan(おばあさ)',
       enName: 'Grandmother',
       sound: 'sounds/family_members/grand mother.wav',
     ),
